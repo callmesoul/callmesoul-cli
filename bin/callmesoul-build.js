@@ -9,14 +9,14 @@ const ora = require('ora');
 
 program
   .version('0.1.0')
-  .option('-i, init [name]', '初始化x-build项目')
+  .option('-i, init [name]', '初始化vue-init项目')
 
 program
   .parse(process.argv);
 
 if (program.init) {
-  const spinner = ora('正在从github下载x-build').start();
-  download('codexu/x-build', program.init, function (err) {
+  const spinner = ora('正在从github下载vue-init tpl').start();
+  download('callmesoul/vue-init', program.init, function (err) {
     if(!err){
       spinner.clear()
       console.info('');
@@ -45,7 +45,7 @@ if (program.init) {
         })
       });
     }else{
-      spinner.warn(['发生错误，请在https://github.com/codexu，Issues留言'])
+      spinner.warn(['发生错误，请在https://github.com/callmesoul/callmesoul-cli，Issues留言'])
     }
   })
 }
