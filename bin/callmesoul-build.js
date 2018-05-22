@@ -28,7 +28,7 @@ if (program.init) {
       console.info(chalk.blueBright(` -  npm install`));
       console.info(chalk.blueBright(` -  npm run dev`));
       console.info('');
-      console.info(chalk.gray('参考文档: https://github.com/codexu/x-build'));
+      console.info(chalk.gray('参考文档: https://github.com/callmesoul/vue-init'));
       console.info('');
       console.info(chalk.green('-----------------------------------------------------'));
       console.info('');
